@@ -1,7 +1,11 @@
 body {
-  background-color: bisque;
+  background-color: beige;
 }
 
 ul {
   list-style: none;
+}
+
+h1 {
+  color: aqua;
 }
