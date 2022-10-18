@@ -13,13 +13,27 @@
     <title>Kakao clone</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      div {
-        display: inline-flex;
-        width: 100px;
-        height: 100px;
-        background-color: teal;
+      #box2 {
+        background-color: yellowgreen;
+      }
+      main {
+        display: flex;
+        height: 60vh;
+        margin: 20px;
         justify-content: center;
-        align-items: flex-end;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: row;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100px;
+        font-size: 30px;
+        color: white;
+        background-color: teal;
       }
       h1 {
         color: #a52a2a;
@@ -35,9 +49,6 @@
   <body>
     <header>
       <h1>Hello, Privet</h1>
-    </header>
-
-    <main>
       <img src="img/ahegao.jpg" />
       <img src="img/Jack-o.jpg" />
       <form action="">
@@ -52,10 +63,12 @@
           <li><input type="checkbox" />(Г) купит</li>
         </ul>
       </form>
+    </header>
 
-      <div></div>
-      <div></div>
-      <div></div>
+    <main>
+      <div>1</div>
+      <div id="box2">2</div>
+      <div>3</div>
     </main>
 
     <footer>&copy; 2022 Seokmin & Somnest</footer>
