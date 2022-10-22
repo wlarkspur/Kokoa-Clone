@@ -19,15 +19,22 @@
         padding: 5px;
         border-radius: 10px;
       }
-      p span {
-        color: teal;
+      input {
+        border: 1px solid wheat;
       }
-      div p span {
-        color: blue;
+
+      input:required {
+        border-color: tomato;
       }
-      p + span {
-        text-decoration: underline;
+      input[placeholder~="name"] {
+        background-color: pink;
       }
+
+      a[href="https://github.com/wlarkspur"]
+      {
+        color: fuchsia;
+      }
+
       h1 {
         color: #a52a2a;
         font-style: italic;
@@ -61,8 +68,13 @@
       </form>
       <section>
         <div>
-          <p>asdasdasdasdasdsads <span>inside</span></p>
-          <span>Privet</span>
+          <p>wlarkspur gitub <a href="https://github.com/wlarkspur">link</a></p>
+
+          <form action="">
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
+            <input type="password" placeholder="password" required />
+          </form>
         </div>
       </section>
     </main>
