@@ -13,28 +13,25 @@
     <title>Kakao clone</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      :root {
+        --main-color: rgb(27, 248, 101);
+        --defualt-border: 1px solid black;
+      }
       span {
-        color: tomato;
         background-color: yellowgreen;
         padding: 5px;
         border-radius: 10px;
       }
-      input {
-        border: 1px solid wheat;
+      div a:visited {
+        color: red;
       }
-
-      input:required {
-        border-color: tomato;
+      div a {
+        color: var(--main-color);
       }
-      input[placeholder~="name"] {
-        background-color: pink;
+      div p {
+        background-color: var(--main-color);
+        border: var(--defualt-border);
       }
-
-      a[href="https://github.com/wlarkspur"]
-      {
-        color: fuchsia;
-      }
-
       h1 {
         color: #a52a2a;
         font-style: italic;
@@ -68,13 +65,18 @@
       </form>
       <section>
         <div>
-          <p>wlarkspur gitub <a href="https://github.com/wlarkspur">link</a></p>
-
-          <form action="">
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
-            <input type="password" placeholder="password" required />
-          </form>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+          <a href="#">Website</a>
         </div>
       </section>
     </main>
