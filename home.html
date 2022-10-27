@@ -17,18 +17,50 @@
         --main-color: rgb(27, 248, 101);
         --defualt-border: 1px solid black;
       }
+      @keyframes superSexyCoinFlip {
+        0% {
+          transform: rotate(0);
+        }
+        50% {
+          transform: rotate(360deg);
+        }
+        0% {
+          transform: rotate(0);
+        }
+      }
       img {
         border: 1px solid grey;
         border-radius: 10%;
-        transition: transform 2s ease-in-out;
+        animation: superSexyCoinFlip 0.6s ease-in-out both;
       }
-      img:hover {
-        transform: rotateY(360deg) scale(0.5);
+      #box {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+        margin-top: 10px;
       }
+
+      @media screen and (min-width: 844px) {
+        #box {
+          background-color: tomato;
+        }
+      }
+
       span {
         background-color: yellowgreen;
         padding: 5px;
         border-radius: 10px;
+        font-size: 26px;
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
+      }
+      @media print {
+        body {
+          background-color: tomato;
+        }
       }
       a {
         color: wheat;
@@ -62,7 +94,7 @@
 
     <main>
       <img src="img/ahegao.jpg" />
-      <img src="img/Jack-o.jpg" />
+
       <span>aaaaa</span>
       <form action="">
         <p>
@@ -80,6 +112,8 @@
         <div>
           <a href="#">Website</a>
         </div>
+        <div id="box"></div>
+        <span>please filp your phone :(</span>
       </section>
     </main>
 
