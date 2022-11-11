@@ -52,3 +52,24 @@
   margin-bottom: 11px;
   display: block;
 }
+
+.user-component__phone-number{
+  display: flex;
+}
+
+
+.user-component__exclmark {
+  background-color: white;
+  border: 2px solid;
+  color: tomato;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  margin: 7px 0 0 5px;
+  
+}
