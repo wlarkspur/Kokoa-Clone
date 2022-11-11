@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 45px 25px var(--horizontal-space);
+  padding: 45px 15px 25px var(--horizontal-space);
   margin-bottom: 15px;
 }
 
@@ -11,6 +11,25 @@
   font-weight: 600;
 }
 
+
+
 .screen-header__icons span {
   margin-left: 20px;
+  justify-content: space-around;
+  position: relative;
+}
+
+.screen-header__icons div {
+  right: 5px;
+  top: 50px;
+  width: 5px;
+  height: 5px;
+}
+
+.screen-header__dot{
+  background-color: tomato;
+  width: 16px;
+  height: 16px;
+  border-radius: 15px;
+  position: absolute;
 }
