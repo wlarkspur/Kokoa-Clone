@@ -120,4 +120,5 @@
 
 .open-post__heart-count:hover i {
   animation: heartBeat 1.2s linear infinite;
+  will-change: transform;
 }
