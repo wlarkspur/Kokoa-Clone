@@ -85,6 +85,11 @@
         text-align: center;
         color: tomato;
       }
+
+      .question1 {
+        display: block;
+        margin-bottom: 20px;
+      }
     </style>
   </head>
   <body>
@@ -101,12 +106,24 @@
           1.Он совсем забыл обо мне. А тут вдруг взял и ... огромный букет
           цветов
         </p>
-        <ul>
-          <li><input type="checkbox" />(A) покупал</li>
-          <li><input type="checkbox" />(B) купил</li>
-          <li><input type="checkbox" />(В) покупает</li>
-          <li><input type="checkbox" />(Г) купит</li>
-        </ul>
+        <div class="question1">
+          <div class="question-select">
+            <input type="radio" name="question1" id="question1-1" />
+            <label for="question1-1">(A) покупал</label>
+          </div>
+          <div class="question-select">
+            <input type="radio" name="question1" id="question1-2" />
+            <label for="question1-2">(Б) купил</label>
+          </div>
+          <div class="question-select">
+            <input type="radio" name="question1" id="question1-3" />
+            <label for="question1-3">(В) покупает</label>
+          </div>
+          <div class="question-select">
+            <input type="radio" name="question1" id="question1-4" />
+            <label for="question1-4">(Г) купит</label>
+          </div>
+        </div>
       </form>
       <section>
         <div>
