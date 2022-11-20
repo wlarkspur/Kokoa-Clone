@@ -50,5 +50,5 @@
   display: flex;
   font-size: 132px;
   animation: hideSplaseScreen 0.3s ease-in-out forwards;
-  animation-delay: 2s;
+  animation-delay: 0.5s;
 }
